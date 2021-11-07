@@ -1,4 +1,4 @@
---Показать все купленные программы путевок в данный город.
+--РџРѕРєР°Р·Р°С‚СЊ РІСЃРµ РєСѓРїР»РµРЅРЅС‹Рµ РїСЂРѕРіСЂР°РјРјС‹ РїСѓС‚РµРІРѕРє РІ РґР°РЅРЅС‹Р№ РіРѕСЂРѕРґ.
 SELECT DISTINCT Cities.ID
      , Cities.[Name]
 	 , Countries.[Name]
@@ -10,4 +10,4 @@ INNER JOIN Countries
 ON Tours.ID_Country = Countries.ID
 INNER JOIN Programs
 ON Tours.ID_Program = Programs.ID
-WHERE Cities.[Name] LIKE '%рим%'; 
+WHERE Cities.[Name] LIKE '%Г°ГЁГ¬%'; 
