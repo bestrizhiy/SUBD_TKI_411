@@ -1,4 +1,4 @@
---Показать все цены на путёвки (без скидок) в порядке убывания.
+--РџРѕРєР°Р·Р°С‚СЊ РІСЃРµ С†РµРЅС‹ РЅР° РїСѓС‚С‘РІРєРё (Р±РµР· СЃРєРёРґРѕРє) РІ РїРѕСЂСЏРґРєРµ СѓР±С‹РІР°РЅРёСЏ.
 SELECT DISTINCT Countries.[Name] AS Country_Name
 	 , Cities.[Name] AS City_Name
 	 , Programs.[Name] AS [Program_Name]
@@ -14,5 +14,5 @@ INNER JOIN Clients
 ON Tours.ID_Client = Clients.ID
 INNER JOIN Discounts
 ON Clients.ID_Discount = Discounts.ID
-WHERE Discounts.[Name] LIKE '%нет%' 
+WHERE Discounts.[Name] LIKE '%Г­ГҐГІ%' 
 ORDER BY Price DESC;
