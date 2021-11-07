@@ -1,4 +1,4 @@
---Показать список заказанных путёвок с определённой программой.
+--РџРѕРєР°Р·Р°С‚СЊ СЃРїРёСЃРѕРє Р·Р°РєР°Р·Р°РЅРЅС‹С… РїСѓС‚С‘РІРѕРє СЃ РѕРїСЂРµРґРµР»С‘РЅРЅРѕР№ РїСЂРѕРіСЂР°РјРјРѕР№.
 SELECT Tours.ID
      , Countries.[Name] AS Country_Name
 	 , Cities.[Name] AS City_Name
@@ -10,4 +10,4 @@ INNER JOIN Cities
 ON Tours.ID_City = Cities.ID
 INNER JOIN Programs
 ON Tours.ID_Program = Programs.ID
-WHERE Programs.[Name] LIKE  '%деловой%'; 
+WHERE Programs.[Name] LIKE  '%Г¤ГҐГ«Г®ГўГ®Г©%'; 
